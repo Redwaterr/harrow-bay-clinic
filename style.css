@@ -1,0 +1,20 @@
+:root { --sea-deep:#17414F; --sea:#2C7383; --paper:#FBF4E4; --paper-dark:#EEDFC0; --ink:#2B2A33; --ink-soft:#6D6873; --coral:#E56B55; --gold:#F4BC4C; }
+* { box-sizing: border-box; }
+body { margin: 0; background: linear-gradient(180deg, #182144 0%, #1F4E68 45%, #4E8892 100%) fixed; color: var(--ink);
+  font: 17px/1.6 "Fredoka", system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; color: #fff; margin-bottom: 20px; }
+header img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+header h1 { margin: 0; font-size: 28px; line-height: 1.15; }
+header p { margin: 2px 0 0; opacity: .8; font-size: 15px; }
+.card { background: var(--paper); border-radius: 20px; padding: 28px 28px 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+h2 { color: var(--coral); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin: 28px 0 6px; }
+h2:first-child { margin-top: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 8px 0; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--paper-dark); }
+th { color: var(--ink-soft); font-weight: 600; }
+a { color: var(--sea); font-weight: 600; }
+.muted { color: var(--ink-soft); font-size: 14px; }
+.links a { display: inline-block; margin: 6px 12px 0 0; }
+footer { color: rgba(255,255,255,.75); text-align: center; font-size: 13px; margin-top: 24px; }
+@media (max-width: 520px) { .card { padding: 20px 16px 12px; } table, thead, tbody, tr, th, td { font-size: 14px; } }
